@@ -66,6 +66,9 @@
   </forceEntries>
   <sharedSelectionEntries>
     <selectionEntry id="ca13-7eba-fb7b-85dc" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77cf-0cf9-df38-9027" type="max"/>
+      </constraints>
       <profiles>
         <profile id="8dcc-2757-bfc4-60e6" name="Shield" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
           <characteristics>
@@ -78,21 +81,54 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9bae-2a26-258a-a25d" name="Two Handed Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f74-018a-ce6b-c45c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d529-0a0b-d981-2991" name="Two Handed Weapon" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">If equipped, this Character gets +2 Power for all Melee Attacks. However, any of their own Critical Defends are discarded as if they were Failures.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="536b-2208-d864-4f5a" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f19-f43f-3171-0e9d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="dd67-f259-069d-671b" name="Spear" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">If equipped, the Character may immediately make a 1AP Attack out-of- Round against an enemy Character if that enemy Character made base contact as the result of a Charge. This AP is taken from their next Activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ef98-7c8a-2485-3437" name="Torch" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a5-01d9-1bf3-932b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cc59-f34e-d3d9-4998" name="Torch" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">If equipped, the Character counts as Fearsome to Beasts and Monsters. In addition, the Character counts as Fearsome, and has +1 Power on all Melee Attacks, against Characters who are Flammable. However, enemy Characters roll 2D6 on their Aiming Roll and chose the highest when using Ranged Weapons against them.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="708b-7c81-c130-636c" name="Ranged Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="348e-34f2-0299-a724" type="max"/>
+      </constraints>
       <profiles>
         <profile id="07db-7531-3a97-d0bd" name="Ranged Weapon" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
           <characteristics>
@@ -107,6 +143,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4a7b-165c-51f6-366f" name="Medicine Chest" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05eb-5a0e-b3e8-159d" type="max"/>
+      </constraints>
       <profiles>
         <profile id="17e8-daff-6af5-645b" name="Medicine Chest" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
           <characteristics>
@@ -119,6 +158,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2d63-9484-6cd7-3faf" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="fdc0-e606-df50-abab" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eee4-275e-a154-1d28" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc0-e606-df50-abab" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="44e1-1ce9-d507-1ca0" name="Light Armour" hidden="false" targetId="dca9-636b-a6b0-cd56" type="profile"/>
       </infoLinks>
@@ -127,6 +176,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="eee4-275e-a154-1d28" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="f790-3345-1c8b-7a1b" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d63-9484-6cd7-3faf" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f790-3345-1c8b-7a1b" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ce44-23f3-debb-572e" name="Heavy Armour" hidden="false" targetId="9029-f910-2b54-39d4" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
       </costs>
@@ -136,6 +198,11 @@
     <profile id="dca9-636b-a6b0-cd56" name="Light Armour" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">+1 to Armour. This does not stack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9029-f910-2b54-39d4" name="Heavy Armour" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">+2 to Armour. This does not stack. In addition, all Leg It rolls are at -1.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

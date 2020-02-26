@@ -39,7 +39,15 @@
       </profiles>
       <infoLinks>
         <infoLink id="9685-5e21-5cde-63a9" name="Make Orders" hidden="false" targetId="69b5-d29f-296f-d7d1" type="rule"/>
-        <infoLink id="44ac-8a3b-a553-e422" name="Light Armour" hidden="false" targetId="dca9-636b-a6b0-cd56" type="profile"/>
+        <infoLink id="44ac-8a3b-a553-e422" name="Light Armour" hidden="false" targetId="dca9-636b-a6b0-cd56" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="1103-1376-98ab-2ae0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eee4-275e-a154-1d28" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="94f0-5208-0c7d-ea31" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
@@ -172,6 +180,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ad-5994-ee8c-01d4" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="73aa-619a-e6d1-6aa8" name="Regimental Colours" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">A majestic banner with the crest of the Regiment. Whilst held by a friendly Character, friendly Characters within 12” re-roll failed Bravery Tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
           </costs>
@@ -180,7 +195,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2b3f-977c-bc39-38cc" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1103-1376-98ab-2ae0" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -204,6 +219,15 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7366-5962-b489-a383" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="48c0-0de3-81f9-a611" name="Arcloque rifle" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">20” range. This Attack may only be made once per Activation. If there are more Failures than Successes, the wielder receives the same number of Hits to themselves as if they were Hits from the same weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
           </costs>
