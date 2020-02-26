@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="2ccb-8220-2fbc-a624" name="Albionnican" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="1103-1376-98ab-2ae0" name="Captain" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ae63-4a23-8f87-4393" name="Captain" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="1103-1376-98ab-2ae0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d1d-68a1-ccde-6a19" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">9</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0045-29fc-e001-f529" name="Riposte" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If this Attack removes HP, the next Character who attempts to Attack the Captain must pass an Easy Feat or lose 1HP. </characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9b02-2112-baf4-0ca9" name="Slash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits ignore Armour</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9685-5e21-5cde-63a9" name="Make Orders" hidden="false" targetId="69b5-d29f-296f-d7d1" type="rule"/>
+        <infoLink id="44ac-8a3b-a553-e422" name="Light Armour" hidden="false" targetId="dca9-636b-a6b0-cd56" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="94f0-5208-0c7d-ea31" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="38d9-2742-6a18-006e" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ab28-f17d-68d2-7550" name="Albionnican Trooper" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ee4e-df36-badc-e310" name="Heavy Strike" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">A Critical Hit allows the player to re-roll 1 failed Hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf4-8256-1c11-0bf4" name="Thrust" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf81-70ff-4bfc-671c" name="Albionnican Trooper" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="ca84-91e2-58b7-8c88" value="1">
+              <conditions>
+                <condition field="selections" scope="ab28-f17d-68d2-7550" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6954-0c06-8fd9-c75e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ccbe-bd81-3954-ea28" name="Take Orders" hidden="false" targetId="6342-64e6-26cc-f434" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a7a6-33a8-1a58-312e" name="Unit" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="be5d-cf6c-cf3d-dbdc" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1def-dc88-e15b-96b4" name="Ammo Monkey" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="a322-07c0-6098-fd2e" name="Ammo Monkey" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">5</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3c8-4a73-5490-4d1b" name="Fling" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">8” range. A Critical Hit allows the player to re-roll 1 failed Hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c9f1-2df6-024e-66ff" name="Bite" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7139-a51d-9a18-bc4f" name="Nimble Fingers" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">This Character has almost human-like hands, and therefore can use surprisingly complex Charge. May be equipped with Ranged Weapons, but at -1 for their Aiming Roll. They are monkeys, after all…</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="42b2-7d03-fb73-74c4" name="Ammo Carrier" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">If a friendly Character with a Ranged Weapon is in base contact, they may fire their weapon twice in an Activation, if they have the required AP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4976-0765-c0f9-d6fe" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a2bf-90c1-bd12-22b9" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4a0-e1f4-6e41-d36b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="369a-4043-f5bf-7443" name="Armoury" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="6954-0c06-8fd9-c75e" name="Sergeant&apos;s Chevrons" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e4c-9cc0-7d22-b185" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ace0-3127-2c42-3d7b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2e8e-95ae-6f8e-125c" name="Sergeant" hidden="false" targetId="e193-6899-b185-3010" type="profile"/>
+            <infoLink id="5e8a-2321-c548-0fbe" name="Make Orders" hidden="false" targetId="69b5-d29f-296f-d7d1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8552-176d-5845-9e92" name="Regimental Colours" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ad-5994-ee8c-01d4" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d489-38f8-541e-3fe2" name="Arcloque pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2b3f-977c-bc39-38cc" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b49-10f1-1c71-56a6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3b4e-af16-604f-8c65" name="Arcloque Pistol" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">12” range. This Attack may only be made once per Activation. If there are more Failures than Successes, the wielder takes 1 Hit. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8a0c-dc66-f90a-ba6e" name="Arcloque rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7366-5962-b489-a383" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8d1d-68a1-ccde-6a19" name="Mount" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf4c-ce8e-9680-32d6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="864f-5b64-2bc2-1799" name="Mount" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">May re-roll the first failed Leg It roll. Now on a 50mm base.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="50.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2119-2c49-ae0d-1b16" name="Shield" hidden="false" collective="false" import="true" targetId="ca13-7eba-fb7b-85dc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81dd-109d-a9c7-530d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f35f-417a-e11f-28cd" name="Two Handed Weapon" hidden="false" collective="false" import="true" targetId="9bae-2a26-258a-a25d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d25-6518-0224-bb31" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e5a3-ee65-2014-9ae0" name="Spear" hidden="false" collective="false" import="true" targetId="536b-2208-d864-4f5a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e540-1a02-b3d2-e726" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8820-93dc-6c91-3ee7" name="Torch" hidden="false" collective="false" import="true" targetId="ef98-7c8a-2485-3437" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9425-8b79-5019-bd13" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a104-5a67-e6e9-dffd" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94b1-4e50-7eb5-3ded" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="33bd-1677-cf14-3c02" name="Light Armour" hidden="false" collective="false" import="true" targetId="2d63-9484-6cd7-3faf" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1103-1376-98ab-2ae0" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="325d-7aad-8e85-19db" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4d9f-d6a5-d235-fdba" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="eee4-275e-a154-1d28" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b305-16c2-f96a-daea" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3a03-8587-9cd4-284a" name="Medicine Chest" hidden="false" collective="false" import="true" targetId="4a7b-165c-51f6-366f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5859-c25c-f0b3-3d41" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="69b5-d29f-296f-d7d1" name="Make Orders" hidden="false">
+      <description>If a Character has the Make Orders skill, one of the following commands can be issued to all friendly Characters with the Take Orders skill within 12”. Upon issuing a command this Character&apos;s Activation ends and Activation passes to the Characters taking orders:
+o As one!
+Up to three Characters of the same Type may Activate together. Any Attacks made must be against the same target, and are rolled one after another.
+o Stand firm!
+Up to three Characters of the same Type automatically pass all Bravery Tests for the next Round.
+o Volley!
+Up to five Characters of the same Type equipped with Ranged Weapons may Activate together. All failed rolls to Shoot may be re-rolled. </description>
+    </rule>
+    <rule id="6342-64e6-26cc-f434" name="Take Orders" hidden="false">
+      <description>This character can be given Orders by a Model with the Make Orders ability.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="e193-6899-b185-3010" name="Sergeant" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">Characters with this Ability gain +1 Bravery, and are given the Make Orders Ability . If the Sergeant Takes Order from a Captain , they may make the same Order themselves in the same Activation . They can never Take Orders from another Sergeant.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
