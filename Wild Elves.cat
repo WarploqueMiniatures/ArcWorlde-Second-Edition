@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="446d-0d20-69da-b7cf" name="Wild Elves" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="8e4d-9fa8-03d2-a197" name="Summoned" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="b03c-2b40-f921-b0eb" name="Wild Elven Warchief" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e5f2-4ee9-03d1-9071" name="Whirlwind" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">7</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows 1 more D6 to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a859-6f0b-353f-4ea1" name="Deadly Strike" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hit ignores 1 Armour</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4dde-0e6a-b8d7-fc81" name="Bloodrage" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">10</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">This Attack may only be made if the Warchief caused an enemy Character to be Knocked Out in the same Activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b4be-f841-2e99-658d" name="Wild Elven Warchief" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">5</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">8</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">14</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f8e2-f886-3f9c-84f5" name="Agile" hidden="false" targetId="46d4-e5df-753a-dbbe" type="rule"/>
+        <infoLink id="6fe6-4bb3-9423-44f5" name="Sacrifice" hidden="false" targetId="490c-e6bc-3eed-4ef6" type="rule"/>
+        <infoLink id="bc57-9392-88c3-80ed" name="Summoner" hidden="false" targetId="1421-e006-7257-7dcf" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0f4c-9478-dbab-0ead" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5550-0970-a749-3cff" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="140.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f718-4bf6-f4b0-d336" name="Wild Elven Warrior" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3e72-5d56-763f-a715" name="Wild Elven Warrior" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aafb-7795-7933-b25b" name="Flurry of Blades" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows 1 more D6 to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="affb-aeb7-0824-8a70" name="Wicked Slash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hit ignores 1 Armour</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="66d3-451a-1bf3-72ed" name="Agile" hidden="false" targetId="46d4-e5df-753a-dbbe" type="rule"/>
+        <infoLink id="c6bf-a17b-d6b2-7510" name="Summoner" hidden="false" targetId="1421-e006-7257-7dcf" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4719-c0da-51c9-34e1" name="New CategoryLink" hidden="false" targetId="546e-d4c4-56cf-957e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e758-fb04-985e-d1a5" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="100.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="08b3-1787-6aee-e86c" name="Woodfiend" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b7da-fa77-3092-785d" name="Woodfiend" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">3</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">5</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0b5b-e958-f014-fa3a" name="Razorbark" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e777-a9bc-4beb-7108" name="Splinter" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">8&quot; Range</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8933-4461-fa25-5685" name="New CategoryLink" hidden="false" targetId="8e4d-9fa8-03d2-a197" primary="false"/>
+        <categoryLink id="7903-6979-d894-d2bc" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="0e19-9c5d-a47c-4722" name="Flammable" hidden="false" targetId="6920-91e1-7014-aed1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="84e5-e7fa-dc82-82b4" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="964d-7783-90fb-c5cc" name="Lichenhawk" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4cfe-ad99-956e-2a04" name="Lichenhawk" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">8</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">3</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c8a1-6f74-35f2-a64a" name="Peck" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2028-32b7-0b7d-6ce1" name="Skydive" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">2&quot; Range. After this Attack, move this Character in base contact with the target.. If more Failures are rolled than Successes to Hit, this Character is Knocked Out.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5568-c571-6faa-3387" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+        <categoryLink id="cc3f-d1b8-3504-8e75" name="Summoned" hidden="false" targetId="8e4d-9fa8-03d2-a197" primary="false"/>
+        <categoryLink id="12f6-0682-0e61-ca73" name="Flammable" hidden="false" targetId="6920-91e1-7014-aed1" primary="false"/>
+        <categoryLink id="af9f-598c-bdd9-ec9b" name="Fly" hidden="false" targetId="53c6-b721-3436-3371" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="1f75-53cf-c0a4-9aae" name="Armoury" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="14f0-773b-3bda-2fd6" name="Light Warding" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="eb2d-858e-a66e-4820" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6f8-944a-f7fb-ee44" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2d-858e-a66e-4820" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c5d2-84b3-2ac4-824f" name="Light Warding" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">+1 Armour. This does not stack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e6f8-944a-f7fb-ee44" name="Heavy Warding" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="dd02-2784-4863-9e0b" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="14f0-773b-3bda-2fd6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd02-2784-4863-9e0b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6e38-5930-559e-9fe3" name="Heavy Warding" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">+2 Armour. This does not stack. Movement stat decreased by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="26bd-2a5a-f15e-da90" name="Sacrificial Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d6-0f36-007a-8657" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3a54-11a7-4fba-f271" name="Sacrificial Blade" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">The Character learns the Sacrifice Ability. If the Character already has the Sacrifice Ability, they may re-roll a failed attempted per Round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="aab9-b1be-a266-c6ac" name="Sacrifice" hidden="false" targetId="490c-e6bc-3eed-4ef6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e3ea-715c-10ef-0547" name="Strongbow" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b8-d890-6494-da64" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="01b0-8a00-4c4e-3e8f" name="Strongbow" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816">10</characteristic>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">20” range. This Attack may only be made once per Activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1217-464b-efe5-ec89" name="Faeblade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ac7-9825-13b7-b313" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5562-cfc9-13ab-ce67" name="Faeblade" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">Can be used as either a Two-Handed Weapon or a Ranged Weapon. If it&apos;s thrown, you may perform an Easy Feat to summon the weapon back to the Character’s hand. If the Feat fails, the weapon remains on- the</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="625a-a146-5c8a-72bd" name="Faeblade (Ranged)" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">16&quot; Range. This attack may only be made once per Activation.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4c67-f5d5-6e70-6e09" name="Faeblade (Two-Handed)" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">If equipped, this Character gets +2 Power for all Melee Attacks. However, any of their own Critical Defends are discarded as if they were Failures.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b72b-60ff-e2d7-0549" name="Healing Gem" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5711-6133-735e-ed58" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="928f-c4ba-b343-e83c" name="Healing Gem" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">Regains D6 HP when used by the Character. The Character can give the Healing Gem to a friendly model, but they must be in base contact. May be used on Beasts, Monsters and Titans.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="43e1-0cd9-ed72-fdf3" name="Two Handed Weapon" hidden="false" collective="false" import="true" targetId="9bae-2a26-258a-a25d" type="selectionEntry"/>
+        <entryLink id="588d-9f63-f964-56fc" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="490c-e6bc-3eed-4ef6" name=" Sacrifice (2 AP)" hidden="false">
+      <description>Once per Activation a Character with this Ability may choose any Character in base contact on the same sized base or smaller. If they are lower than 25% of their total HP, roll a D6. If successful, the enemy Character is Knocked Out, and the player receives one Arcanite Token.</description>
+    </rule>
+    <rule id="1421-e006-7257-7dcf" name="Summoner" hidden="false">
+      <description>A Character with the Summoner Ability may attempt to bring a model with the Summoned ability to ‘life’ on the battlefield by attempting a Feat:
+
+o Easy: If successful, place the Summoned Character within 6&quot; of the Summoner. This Character is Inactive and can be Activated later on in the Round.
+o Medium: If successful, place the Summoned Character within 12” of the Summoner and Activate it immediately after the Summoner&apos;s Activation ends. 
+
+Summoned Characters may carry Items or Equipment, but may not use them unless the rules specifically state so. Also, if they ever fail a Bravery Test they are Knocked Out, as the magic that binds them crumbles. If a Summoned model is ever Knocked Out, they can be re-Summoned in the following Round.</description>
+    </rule>
+  </sharedRules>
+</catalogue>

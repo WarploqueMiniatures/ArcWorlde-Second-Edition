@@ -44,6 +44,8 @@
     <categoryEntry id="9872-5a43-1e46-091a" name="Irregular" hidden="false"/>
     <categoryEntry id="1b2c-7087-cbbd-044e" name="Monster" hidden="false"/>
     <categoryEntry id="fb65-f23e-2720-296d" name="Titan" hidden="false"/>
+    <categoryEntry id="6920-91e1-7014-aed1" name="Flammable" hidden="false"/>
+    <categoryEntry id="53c6-b721-3436-3371" name="Fly" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7195-1652-b5d6-5e8d" name="Warband" hidden="false">
@@ -194,6 +196,11 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="46d4-e5df-753a-dbbe" name="Agile" hidden="false">
+      <description>A Character with this Ability may re-roll a single failed Leg It roll per Round.</description>
+    </rule>
+  </sharedRules>
   <sharedProfiles>
     <profile id="dca9-636b-a6b0-cd56" name="Light Armour" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
       <characteristics>
