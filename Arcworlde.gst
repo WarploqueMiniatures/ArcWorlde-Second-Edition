@@ -42,14 +42,28 @@
     <categoryEntry id="546e-d4c4-56cf-957e" name="Elite" hidden="false"/>
     <categoryEntry id="4cc9-b189-8f57-f414" name="Beast" hidden="false"/>
     <categoryEntry id="9872-5a43-1e46-091a" name="Irregular" hidden="false"/>
-    <categoryEntry id="1b2c-7087-cbbd-044e" name="Monster" hidden="false"/>
-    <categoryEntry id="fb65-f23e-2720-296d" name="Titan" hidden="false"/>
+    <categoryEntry id="1b2c-7087-cbbd-044e" name="Monster" hidden="false">
+      <rules>
+        <rule id="6e2f-2c62-c877-5227" name="Monster" hidden="false">
+          <description>Must pass a Bravery Test on the first Activation of every Round, or will immediately use its free Movement towards the nearest Character, friend or foe. If base contact is made, the Monster will Attack. The opponent chooses the Attack.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="fb65-f23e-2720-296d" name="Titan" hidden="false">
+      <rules>
+        <rule id="236b-3833-09db-6dcc" name="Titan" hidden="false">
+          <description>Must pass a Bravery Test on every Activation, or will immediately use its free Movement towards the nearest Character, friend or foe. If it’s free Movement has been used, it will make one Leg It roll. If base contact is made, the Monster will Attack. The opponent chooses the Attack.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="6920-91e1-7014-aed1" name="Flammable" hidden="false"/>
     <categoryEntry id="53c6-b721-3436-3371" name="Fly" hidden="false"/>
+    <categoryEntry id="b937-4657-18eb-482f" name="Configuration" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7195-1652-b5d6-5e8d" name="Warband" hidden="false">
       <categoryLinks>
+        <categoryLink id="7be1-a830-183e-162f" name="Configuration" hidden="false" targetId="b937-4657-18eb-482f" primary="false"/>
         <categoryLink id="3389-6772-6723-35d2" name="Commander" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a68-0340-8a63-73e1" type="max"/>
@@ -144,21 +158,6 @@
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4a7b-165c-51f6-366f" name="Medicine Chest" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05eb-5a0e-b3e8-159d" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="17e8-daff-6af5-645b" name="Medicine Chest" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
-          <characteristics>
-            <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">Regains D6 HP when used by the Character. The Character can give the Medicine Chest to a friendly model, but they must be in base contact. May be used on Beasts, Monsters and Titans.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="2d63-9484-6cd7-3faf" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="fdc0-e606-df50-abab" value="0.0">
@@ -195,10 +194,59 @@
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="508b-8526-fb8f-5b88" name="Mount" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2207-feed-b6bc-c564" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2bce-a6e1-e55e-d242" name="Mount" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">May re-roll the first failed Leg It roll. Now on a 50mm base.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="50.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="46d4-e5df-753a-dbbe" name="Agile" hidden="false">
       <description>A Character with this Ability may re-roll a single failed Leg It roll per Round.</description>
+    </rule>
+    <rule id="6093-45e2-5f38-e321" name="Pack Hunter" hidden="false">
+      <description>Creatures with this Ability are often seen hunting together, to deadly effect. Up to three of the same Character with this Ability may be Activated at the same time. In addition, they may reroll a single failed Hit each if they Attack the same target.</description>
+    </rule>
+    <rule id="77cc-a374-fb7f-a17c" name="Split Activation" hidden="false">
+      <description>A Character with this Ability can divide their AP across multiple Activations. When Activated, the player may choose to end the Activation at any time, and restart it again after any of their opponent’s Activations. This may happen multiple times until all of the Character’s AP is spent.
+
+This Character may only make its free Movement once per Round. In subsequent Activations within the same Round, the Character may move again, but only by using Leg It rolls. Each Leg It roll progression starts afresh with each new Activation.</description>
+    </rule>
+    <rule id="b59d-2c8d-a01e-1556" name="Dwindling Strength" hidden="false">
+      <description>This creature can be a struggle to bring down, but wounds can take their toll.
+
+If a Monster with this Ability is reduced to half of its original HP, they lose D3 of their total AP for the rest of the game. If the Monster regains HP and is no longer at half HP or less, they regain their lost AP.
+
+A Titan with this Ability loses D3 AP every time it loses 25% of its starting HP. Eg – a Character with 40 HP would lose D3 AP for every 10 HP lost.</description>
+    </rule>
+    <rule id="b9df-d7df-b729-5fd2" name="Death Throes" hidden="false">
+      <description>A Monster is at its most dangerous when it is mortally wounded. When the creature is down to 20% of its HP, it may re-roll one D6 per Activation. Note – alongside Split Activation this means they can potentially have many re-rolls in the Round.</description>
+    </rule>
+    <rule id="ff17-aeab-09ff-9996" name="Fearsome" hidden="false">
+      <description>If an enemy Character is within 3” and also on a smaller base size than the Fearsome Character, they must take an automatic Bravery Test at the start of their Activation.</description>
+    </rule>
+    <rule id="fd73-7bc0-8099-ac56" name="Gobble" hidden="false">
+      <description>This Character can attempt to swallow an enemy Character whole!
+
+Monsters with this Ability may only Gobble Characters on 30mm bases. Titans with this Ability may Gobble Characters on 30 or 40mm bases.
+
+To attempt to Gobble an enemy Character, roll a Medium Feat. If successful, the victim takes 6 Hits and is removed from the game board as they disappear into the maw of the hungry beast. 
+
+When the victim is next Activated, they must immediately attempt a Medium Feat to try to escape! If successful, the victim triumphs over the creature’s digestive system, and is violently vomited back up onto the battlefield. They may continue their Activation as normal, if not a little sticky and traumatised.
+
+If this attempt is failed, the victim takes 3 Hits and their Activation ends. The next time they are Activated they can try again, but this time the Feat difficulty is increased by one level. If a Gobbled Character is Knocked Out or fails a Legendary Feat to escape, they are digested and the Gobbler regains 1D6 HP. Delicious!
+
+Multiple Characters can be Gobbled at the same time by the beast, as long as the creature is hungry enough…</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -210,6 +258,11 @@
     <profile id="9029-f910-2b54-39d4" name="Heavy Armour" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
       <characteristics>
         <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">+2 to Armour. This does not stack. In addition, all Leg It rolls are at -1.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4afd-779b-42aa-90c9" name="Healing Item" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">Regains D6 HP when used by the Character. The Character can give this item to a friendly model, but they must be in base contact. May be used on Beasts, Monsters and Titans.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="7960-e53e-9859-392f" name="Monsters" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="2a5c-feee-33c0-9247" name="Forest Troll" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="44c3-bb36-abd4-9086" name="Forest Troll" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">5</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">8</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">5</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">20</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2b5d-5461-8a19-126f" name="Smash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits make the target Character Prone if on a smaller base size, after the Attack has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e47d-2d19-cb7a-9b36" name="Hurl" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If a Critical Hit is made, the target Character is thrown D6 inches in a direction of the Troll player’s choosing. This Character is Prone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b759-f61f-02d7-da8c" name="Boulder Lob" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">10</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Ranged (12”). May only be used once a Turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e601-bd98-e594-8d9b" name="Fungal Regeneration" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">If this character doesn’t lose any HP during a Turn, it regains D6 Health.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="119d-bc02-3c65-ed4c" name="Ambush" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">At the start of the game, secretly select one piece of scenery on the board that isn’t in your opponent’s deployment zone. This character is hidden here, and cannot be targeted by any character on the board. At any point during the game, you may choose to reveal the character and it is Activated immediately after the Active character’s activation has ended.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="11eb-4f7c-720a-4c58" name="Split Activation" hidden="false" targetId="77cc-a374-fb7f-a17c" type="rule"/>
+        <infoLink id="c874-86d6-9113-cf28" name="Fearsome" hidden="false" targetId="ff17-aeab-09ff-9996" type="rule"/>
+        <infoLink id="c282-653f-256c-42e0" name="Dwindling Strength" hidden="false" targetId="b59d-2c8d-a01e-1556" type="rule"/>
+        <infoLink id="6ec2-1d49-a044-b957" name="Death Throes" hidden="false" targetId="b9df-d7df-b729-5fd2" type="rule"/>
+        <infoLink id="d5e2-1d33-d26b-db03" name="Gobble" hidden="false" targetId="fd73-7bc0-8099-ac56" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3c28-bfb5-b28d-6e59" name="New CategoryLink" hidden="false" targetId="1b2c-7087-cbbd-044e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="240.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

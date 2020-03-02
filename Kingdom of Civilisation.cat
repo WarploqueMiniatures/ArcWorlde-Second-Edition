@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="2ccb-8220-2fbc-a624" name="Kingdom of Civilisation" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="5ca4-2083-82cc-b57b" name="Albionnican" hidden="false"/>
+    <categoryEntry id="be7e-6c15-675a-9b53" name="Halfling" hidden="false"/>
+    <categoryEntry id="af98-79a9-ec73-a7f4" name="Njorsvald" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="1103-1376-98ab-2ae0" name="Captain" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="887b-453c-c4eb-68da" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1280-28fa-8ee0-5b81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ae63-4a23-8f87-4393" name="Captain" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="1103-1376-98ab-2ae0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">9</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0045-29fc-e001-f529" name="Riposte" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If this Attack removes HP, the next Character who attempts to Attack the Captain must pass an Easy Feat or lose 1HP. </characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9b02-2112-baf4-0ca9" name="Slash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits ignore Armour</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9685-5e21-5cde-63a9" name="Make Orders" hidden="false" targetId="69b5-d29f-296f-d7d1" type="rule"/>
+        <infoLink id="44ac-8a3b-a553-e422" name="Light Armour" hidden="false" targetId="dca9-636b-a6b0-cd56" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="1103-1376-98ab-2ae0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eee4-275e-a154-1d28" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="94f0-5208-0c7d-ea31" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="8ea2-4f56-a1f1-39b6" name="Albionnican" hidden="false" targetId="5ca4-2083-82cc-b57b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="38d9-2742-6a18-006e" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ab28-f17d-68d2-7550" name="Albionnican Trooper" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="887b-453c-c4eb-68da" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1280-28fa-8ee0-5b81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ee4e-df36-badc-e310" name="Heavy Strike" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">A Critical Hit allows the player to re-roll 1 failed Hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="edf4-8256-1c11-0bf4" name="Thrust" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf81-70ff-4bfc-671c" name="Albionnican Trooper" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="ca84-91e2-58b7-8c88" value="1">
+              <conditions>
+                <condition field="selections" scope="ab28-f17d-68d2-7550" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6954-0c06-8fd9-c75e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ccbe-bd81-3954-ea28" name="Take Orders" hidden="false" targetId="6342-64e6-26cc-f434" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a7a6-33a8-1a58-312e" name="Unit" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="d3ee-b5f0-cf4e-054f" name="Albionnican" hidden="false" targetId="5ca4-2083-82cc-b57b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="be5d-cf6c-cf3d-dbdc" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1def-dc88-e15b-96b4" name="Ammo Monkey" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="887b-453c-c4eb-68da" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1280-28fa-8ee0-5b81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a322-07c0-6098-fd2e" name="Ammo Monkey" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">5</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3c8-4a73-5490-4d1b" name="Fling" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">8” range. A Critical Hit allows the player to re-roll 1 failed Hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c9f1-2df6-024e-66ff" name="Bite" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7139-a51d-9a18-bc4f" name="Nimble Fingers" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">This Character has almost human-like hands, and therefore can use surprisingly complex Charge. May be equipped with Ranged Weapons, but at -1 for their Aiming Roll. They are monkeys, after all…</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="42b2-7d03-fb73-74c4" name="Ammo Carrier" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">If a friendly Character with a Ranged Weapon is in base contact, they may fire their weapon twice in an Activation, if they have the required AP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4976-0765-c0f9-d6fe" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+        <categoryLink id="df4d-518f-38d6-1ea7" name="Albionnican" hidden="false" targetId="5ca4-2083-82cc-b57b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a2bf-90c1-bd12-22b9" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4a0-e1f4-6e41-d36b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="536f-06b7-4aa0-2d6d" name="Faction Choice" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e50-5f82-c642-0641" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4dd-50a2-a219-e1d2" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ad3d-6a02-7a20-510a" name="New CategoryLink" hidden="false" targetId="b937-4657-18eb-482f" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7ff9-5cc2-c167-4982" name="Faction" hidden="false" collective="false" import="true" targetId="c9b7-3039-e1c6-c387" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8fdb-f52c-46bc-dc97" name="Halfling Sheriff" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb4a-a988-013f-59e0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1280-28fa-8ee0-5b81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9f33-76b7-ce06-af08" name="Halfling Sheriff" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="8fdb-f52c-46bc-dc97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">8</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7cbf-045d-d240-d922" name="Furious Wallop" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If a Critical Hit is rolled, reduces the Target&apos;s AP by 1 for its next Activation. This does not stack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5deb-d89d-f878-9b0f" name="Hearty Stab" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits ignore Armour</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0798-2265-2c11-fdfa" name="Light Armour" hidden="false" targetId="dca9-636b-a6b0-cd56" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="8fdb-f52c-46bc-dc97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eee4-275e-a154-1d28" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3bca-0a7f-a703-73b8" name="Make Orders (Halflings)" hidden="false" targetId="aabe-d223-61e3-8e86" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="28f8-3090-ee5d-a2c1" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="1099-d7a8-0b3a-8cfd" name="Halfling" hidden="false" targetId="be7e-6c15-675a-9b53" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c777-ec80-30a7-f2fc" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b970-8151-a44c-a6b5" name="Halfling Militia" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb4a-a988-013f-59e0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1280-28fa-8ee0-5b81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="0288-4f66-4e06-2b9e" name="Halfling Militia" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="b970-8151-a44c-a6b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="40f9-1773-346c-4972" name="Thwack" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">A Critical Hit allows the player to re-roll 1 failed Hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22d3-aeab-d0fd-5599" name="Thrust" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d98b-d00c-efe4-f1d2" name="Take Orders" hidden="false" targetId="6342-64e6-26cc-f434" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bcf2-6ee4-5af7-9729" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="04fd-c8c1-10ca-75e8" name="Halfling" hidden="false" targetId="be7e-6c15-675a-9b53" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="47e9-580f-0fc4-ba75" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="45c4-20a9-9bed-ae98" name="Trollhound" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb4a-a988-013f-59e0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1280-28fa-8ee0-5b81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8049-0121-f913-d561" name="Trollhound" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">6</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00dc-a34c-a7f0-09d7" name="Trollhound" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d12f-6e2a-5dac-db21" name="Cling On!" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">If a successful Attack has been made on a Monster, and the Trollhound is in base contact, the Monster suffers a Bite attempt every time it is Activated, which is defended as normal. When the Trollhound is the target of an Attack, roll a D6. On a Failure, this effect is dismissed as the Trollhound loses its grip!</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e16a-bc47-66b5-5c34" name="Agile" hidden="false" targetId="46d4-e5df-753a-dbbe" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="41dc-99aa-0509-17a4" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+        <categoryLink id="c5ab-3475-dad8-f458" name="Halfling" hidden="false" targetId="be7e-6c15-675a-9b53" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a4b-2e62-cb20-7863" name="Norse Thane" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb4a-a988-013f-59e0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="887b-453c-c4eb-68da" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c17f-1121-20e9-34f4" name="Norse Thane" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="5a4b-2e62-cb20-7863" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">9</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="422f-0b69-2407-d8cb" name="Mighty Blow" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If more Successes are rolled than Failures, and the target is on the same or smaller base size, they must pass an Easy Feat or are knocked Prone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ed91-f308-a478-db7b" name="Runic Blade" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">A Critical Hit breaks 1 Armour.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fd3f-a5e5-cc4c-2e55" name="Make Orders (Njorsvald)" hidden="false" targetId="a5ca-023e-83f3-62be" type="rule"/>
+        <infoLink id="0430-5c7d-d9fb-ce76" name="Winter Warrior" hidden="false" targetId="c763-1329-84f7-6c75" type="rule"/>
+        <infoLink id="606f-697e-816c-ef97" name="Honourable Death" hidden="false" targetId="2ba3-88a7-8b34-0804" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="14c9-9252-f32f-5c8f" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="7282-11f1-33d1-8495" name="Njorsvald" hidden="false" targetId="af98-79a9-ec73-a7f4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ab1d-6b27-a053-f0fd" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8745-375a-da0a-7ab4" name="Norse Hallguard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb4a-a988-013f-59e0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="887b-453c-c4eb-68da" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="720b-0f1b-5e35-ba5a" name="Norse Hallguard" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="8745-375a-da0a-7ab4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">8</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="86a0-6f03-00e0-bdae" name="Powerful Hack" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">A Critical Hit allows the player to re-roll 1 failed Hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="651f-ecc2-3681-6d80" name="Thrust" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bbe0-5a52-7fa2-d890" name="Honourable Death" hidden="false" targetId="2ba3-88a7-8b34-0804" type="rule"/>
+        <infoLink id="7739-eed0-f37b-aaf2" name="Winter Warrior" hidden="false" targetId="c763-1329-84f7-6c75" type="rule"/>
+        <infoLink id="3b7a-b350-eda9-8c5f" name="Take Orders" hidden="false" targetId="6342-64e6-26cc-f434" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8353-5fc5-2868-295b" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="664f-8d29-ed62-36b9" name="Njorsvald" hidden="false" targetId="af98-79a9-ec73-a7f4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ce4e-ab11-65f1-235a" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ca0-db1d-ac98-d58a" name="Greater Mjowl" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb4a-a988-013f-59e0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="887b-453c-c4eb-68da" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="e97f-1f2f-0a59-f116" name="Greater Mjowl" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">7</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">6</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5e80-aba6-01c0-5aa9" name="Dive" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If a movement is required for this Attack to take place, add +2” to the total distance available to the Character. If this Attack causes no Damage, this Character loses 1HP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bc55-151e-f86d-6831" name="Bite" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6ebe-b333-148b-dddc" name="Winter Warrior" hidden="false" targetId="c763-1329-84f7-6c75" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fd8a-0935-29ca-78ad" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+        <categoryLink id="7bed-18e0-af7f-5ed4" name="Njorsvald" hidden="false" targetId="af98-79a9-ec73-a7f4" primary="false"/>
+        <categoryLink id="261c-f9ee-78a3-30e4" name="Fly" hidden="false" targetId="53c6-b721-3436-3371" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="369a-4043-f5bf-7443" name="Armoury" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="6954-0c06-8fd9-c75e" name="Sergeant&apos;s Chevrons" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab28-f17d-68d2-7550" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ace0-3127-2c42-3d7b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2e8e-95ae-6f8e-125c" name="Sergeant" hidden="false" targetId="e193-6899-b185-3010" type="profile"/>
+            <infoLink id="5e8a-2321-c548-0fbe" name="Make Orders" hidden="false" targetId="69b5-d29f-296f-d7d1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8552-176d-5845-9e92" name="Regimental Colours" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca4-2083-82cc-b57b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ad-5994-ee8c-01d4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="73aa-619a-e6d1-6aa8" name="Regimental Colours" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">A majestic banner with the crest of the Regiment. Whilst held by a friendly Character, friendly Characters within 12” re-roll failed Bravery Tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d489-38f8-541e-3fe2" name="Arcloque pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1103-1376-98ab-2ae0" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b49-10f1-1c71-56a6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3b4e-af16-604f-8c65" name="Arcloque Pistol" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">12” range. This Attack may only be made once per Activation. If there are more Failures than Successes, the wielder takes 1 Hit. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8a0c-dc66-f90a-ba6e" name="Arcloque rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca4-2083-82cc-b57b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7366-5962-b489-a383" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="48c0-0de3-81f9-a611" name="Arcloque rifle" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">20” range. This Attack may only be made once per Activation. If there are more Failures than Successes, the wielder receives the same number of Hits to themselves as if they were Hits from the same weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="80b3-7306-0b15-700c" name="Medicine chest" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca4-2083-82cc-b57b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6728-459d-29d3-0e8f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="00cc-b017-7601-8ec4" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Medicine chest"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7783-9292-ba2e-b110" name="Potbelly Cauldron" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be7e-6c15-675a-9b53" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc2e-351c-b48e-8afe" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="56ee-f0c0-ba5a-7279" name="Potbelly Cauldron" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">+1 Armour. Generates one Arcanite Token per Round. Character is now on a 40mm base.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="61c4-c0fc-6f2d-539e" name="Health potion" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be7e-6c15-675a-9b53" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d22a-292e-b56d-43a8" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8add-6392-26ff-afbb" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Healing potion"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1c27-29fe-8a1c-67ec" name="Mountain herbs" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="af98-79a9-ec73-a7f4" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f13a-9286-c35e-e1f4" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="cb62-93d3-8443-ff77" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Mountain herbs"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9f0d-a99d-b69f-ac8f" name="Starmetal blade" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="af98-79a9-ec73-a7f4" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a2b-0bd3-fa92-5149" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6829-7303-55fc-3b8c" name="Starmetal blade" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">+1 Power to all Melee Attacks and weapons.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="da4e-c9ad-85cf-00f5" name="Hall Banner" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="af98-79a9-ec73-a7f4" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b79-12ac-670a-b38f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c39c-0522-c4fb-4360" name="Hall Banner" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">A majestic banner with the crest of the Hall. Whilst held by a friendly Character, friendly Characters within 12” re-roll failed Bravery Tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2119-2c49-ae0d-1b16" name="Shield" hidden="false" collective="false" import="true" targetId="ca13-7eba-fb7b-85dc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81dd-109d-a9c7-530d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f35f-417a-e11f-28cd" name="Two Handed Weapon" hidden="false" collective="false" import="true" targetId="9bae-2a26-258a-a25d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d25-6518-0224-bb31" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e5a3-ee65-2014-9ae0" name="Spear" hidden="false" collective="false" import="true" targetId="536b-2208-d864-4f5a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e540-1a02-b3d2-e726" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8820-93dc-6c91-3ee7" name="Torch" hidden="false" collective="false" import="true" targetId="ef98-7c8a-2485-3437" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9425-8b79-5019-bd13" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a104-5a67-e6e9-dffd" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94b1-4e50-7eb5-3ded" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="33bd-1677-cf14-3c02" name="Light Armour" hidden="false" collective="false" import="true" targetId="2d63-9484-6cd7-3faf" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8fdb-f52c-46bc-dc97" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1103-1376-98ab-2ae0" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="325d-7aad-8e85-19db" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4d9f-d6a5-d235-fdba" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="eee4-275e-a154-1d28" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b305-16c2-f96a-daea" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f105-b6be-0f39-0ef8" name="Mount" hidden="false" collective="false" import="true" targetId="508b-8526-fb8f-5b88" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d371-6c9f-154d-1b90" value="35.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be7e-6c15-675a-9b53" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="c9b7-3039-e1c6-c387" name="Faction" hidden="false" collective="false" import="true" defaultSelectionEntryId="9a82-ec2a-b8b0-d05c">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7908-2b73-c322-9335" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4513-c7e1-2723-af21" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="bb4a-a988-013f-59e0" name="Albionnican" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="887b-453c-c4eb-68da" name="Halflings" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1280-28fa-8ee0-5b81" name="Njorsvald" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9a82-ec2a-b8b0-d05c" name="*Mixed*" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="69b5-d29f-296f-d7d1" name="Make Orders (Albionnican)" hidden="false">
+      <description>If a Character has the Make Orders skill, one of the following commands can be issued to all friendly Characters with the Take Orders skill within 12”. Upon issuing a command this Character&apos;s Activation ends and Activation passes to the Characters taking orders:
+o As one!
+Up to three Characters of the same Type may Activate together. Any Attacks made must be against the same target, and are rolled one after another.
+o Stand firm!
+Up to three Characters of the same Type automatically pass all Bravery Tests for the next Round.
+o Volley!
+Up to five Characters of the same Type equipped with Ranged Weapons may Activate together. All failed rolls to Shoot may be re-rolled. </description>
+    </rule>
+    <rule id="6342-64e6-26cc-f434" name="Take Orders" hidden="false">
+      <description>This character can be given Orders by a Model with the Make Orders ability.</description>
+    </rule>
+    <rule id="aabe-d223-61e3-8e86" name="Make Orders (Halflings)" hidden="false">
+      <description>If a Character has the Make Orders skill, one of the following commands can be issued to all friendly Characters with the Take Orders skill within 12”. Upon issuing a command this Character&apos;s Activation ends and Activation passes to the Characters taking orders:
+o As one!
+Up to three Characters of the same Type may Activate together. Any Attacks made must be against the same target, and are rolled one after another.
+o Stand firm!
+Up to three Characters of the same Type automatically pass all Bravery Tests for the next Round.</description>
+    </rule>
+    <rule id="a5ca-023e-83f3-62be" name="Make Orders (Njorsvald)" hidden="false">
+      <description>If a Character has the Make Orders skill, one of the following commands can be issued to all friendly Characters with the Take Orders skill within 12”. Upon issuing a command this Character&apos;s Activation ends and Activation passes to the Characters taking orders:
+o As one!
+Up to three Characters of the same Type may Activate together. Any Attacks made must be against the same target, and are rolled one after another.
+o Stand firm!
+Up to three Characters of the same Type automatically pass all Bravery Tests for the next Round.
+o Shield Wall!
+Up to five un-mounted Characters of the same Type equipped with Shields may Activate together. If they end the Activation in base contact with each other, they may re-roll all failed Defence Rolls. You may not use this order to re-roll a re-roll in this instance. This lasts until one of the Characters is Knocked Out, or until end of the Round.</description>
+    </rule>
+    <rule id="c763-1329-84f7-6c75" name="Winter Warrior" hidden="false">
+      <description>Snow and ice terrain features or weather conditions do not affect Characters with this Ability.</description>
+    </rule>
+    <rule id="2ba3-88a7-8b34-0804" name="Honourable Death" hidden="false">
+      <description>The Njorsvald believe that to die in battle is a great honour, and to do so is a glorious thing. Characters with this Ability to not cause Bravery Tests to be taken by others with this Ability if they are Knocked Out. Instead, until the end of the Round, all friendly Characters with this Ability re-roll all failed rolls to Hit on the first Attack of their Activation.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="e193-6899-b185-3010" name="Sergeant" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">Characters with this Ability gain +1 Bravery, and are given the Make Orders Ability . If the Sergeant Takes Order from a Captain , they may make the same Order themselves in the same Activation . They can never Take Orders from another Sergeant.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink id="6441-f768-ed96-6050" name="Monsters" targetId="7960-e53e-9859-392f" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>
