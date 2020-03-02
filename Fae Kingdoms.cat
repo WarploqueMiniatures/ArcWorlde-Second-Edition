@@ -2,9 +2,32 @@
 <catalogue id="446d-0d20-69da-b7cf" name="Fae Kingdoms" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="8e4d-9fa8-03d2-a197" name="Summoned" hidden="false"/>
+    <categoryEntry id="c4b2-3b2a-9124-8e58" name="Wild Elves" hidden="false"/>
+    <categoryEntry id="26d6-a6c3-28f3-8b76" name="Dark Lords" hidden="false"/>
+    <categoryEntry id="9901-4fe5-0a58-f605" name="Will-bound" hidden="false">
+      <rules>
+        <rule id="92d1-c603-7883-bfd7" name="Will-bound" hidden="false">
+          <description>Characters with the Will-Bound Ability are not deployed on the battlefield, and are not paid for with gold.
+
+Will-Bound Characters cannot be equipped with items or Charge. Also, if they ever fail a Bravery Test they are Knocked Out, as the magic that binds them crumbles. If a Will-Bound Character is ever Knocked Out, the AP that was spent on them is returned to the Heinous Willed Character.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="b03c-2b40-f921-b0eb" name="Wild Elven Warchief" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53cc-0e71-5a3c-9781" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efe9-d7ed-497e-ddcf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="e5f2-4ee9-03d1-9071" name="Whirlwind" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
           <characteristics>
@@ -43,6 +66,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0f4c-9478-dbab-0ead" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="562c-02b7-2422-8997" name="Wild Elves" hidden="false" targetId="c4b2-3b2a-9124-8e58" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5550-0970-a749-3cff" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
@@ -52,6 +76,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f718-4bf6-f4b0-d336" name="Wild Elven Warrior" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53cc-0e71-5a3c-9781" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efe9-d7ed-497e-ddcf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3e72-5d56-763f-a715" name="Wild Elven Warrior" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
           <characteristics>
@@ -82,6 +118,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4719-c0da-51c9-34e1" name="New CategoryLink" hidden="false" targetId="546e-d4c4-56cf-957e" primary="true"/>
+        <categoryLink id="9360-ebc8-e2d2-bb10" name="Wild Elves" hidden="false" targetId="c4b2-3b2a-9124-8e58" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e758-fb04-985e-d1a5" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
@@ -91,6 +128,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="08b3-1787-6aee-e86c" name="Woodfiend" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53cc-0e71-5a3c-9781" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efe9-d7ed-497e-ddcf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="b7da-fa77-3092-785d" name="Woodfiend" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
           <characteristics>
@@ -119,6 +168,7 @@
         <categoryLink id="8933-4461-fa25-5685" name="New CategoryLink" hidden="false" targetId="8e4d-9fa8-03d2-a197" primary="false"/>
         <categoryLink id="7903-6979-d894-d2bc" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
         <categoryLink id="0e19-9c5d-a47c-4722" name="Flammable" hidden="false" targetId="6920-91e1-7014-aed1" primary="false"/>
+        <categoryLink id="9add-a19e-6d61-47cb" name="Wild Elves" hidden="false" targetId="c4b2-3b2a-9124-8e58" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="84e5-e7fa-dc82-82b4" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
@@ -128,6 +178,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="964d-7783-90fb-c5cc" name="Lichenhawk" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53cc-0e71-5a3c-9781" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efe9-d7ed-497e-ddcf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="4cfe-ad99-956e-2a04" name="Lichenhawk" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
           <characteristics>
@@ -157,10 +219,212 @@
         <categoryLink id="cc3f-d1b8-3504-8e75" name="Summoned" hidden="false" targetId="8e4d-9fa8-03d2-a197" primary="false"/>
         <categoryLink id="12f6-0682-0e61-ca73" name="Flammable" hidden="false" targetId="6920-91e1-7014-aed1" primary="false"/>
         <categoryLink id="af9f-598c-bdd9-ec9b" name="Fly" hidden="false" targetId="53c6-b721-3436-3371" primary="false"/>
+        <categoryLink id="962a-664c-7078-b96a" name="Wild Elves" hidden="false" targetId="c4b2-3b2a-9124-8e58" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="02c8-95c6-daf2-a9db" name="Faction" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab90-2115-c907-cc50" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83bb-a500-0206-37ff" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8de4-ac1a-a9c4-da5f" name="New CategoryLink" hidden="false" targetId="b937-4657-18eb-482f" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7b72-90e7-6f74-e9c6" name="Faction" hidden="false" collective="false" import="true" targetId="21f6-93d6-7c49-8c98" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b176-a0c3-67a4-1bc1" name="Dark Lord" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6700-9858-9abb-9cd0" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efe9-d7ed-497e-ddcf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ce02-50cf-8054-9b28" name="Dark Lord" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">6</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">9</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">18</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6e35-7302-0a63-a6eb" name="Rend" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">7</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If more Successes are rolled than Failures, the target is knocked Prone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6cc8-14a9-48ab-97c8" name="Malevolent Gaze" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">6&quot; Range</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e795-9001-2437-590d" name="Dark Lord" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">7</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If HP is taken by this Attack, enemy models must take a Bravery Test as if the target had been Knocked Out.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a7e5-cc0f-7c3b-6528" name="Monologue" hidden="false">
+          <description>If a Character with the Monologue Ability is Activated before the opposing Commander and is within base contact, the Dark Lord player must deliver a grandiose and bombastic speech.
+
+If the opposing player, and/or any onlookers, feel like it was a worthy speech, the Monologuing Character gains +1AP for this Activation. 
+
+If it was a lack-luster attempt, the Monologuing Character loses -2AP as they bumble their way through it. Opponents and onlookers – give credit where credit is due, and remember the Gentlefolk’s Code of Conduct!</description>
+        </rule>
+        <rule id="2bd1-ceff-e33c-8200" name="Heinous Will" hidden="false">
+          <description>Characters with the Will-Bound Ability are not deployed on the battlefield, and are not paid for with gold. A Character with the Heinous Will Ability may attempt to bring them to ‘life’ on the battlefield by sacrificing a portion of their total AP:
+
+o Sacrifice 1AP: If successful, place the Will-Bound Character within 6&quot; of the Heinous Willed Character. The Will-Bound Character is Inactive and can be Activated later on in the Round.
+o Sacrifice 2AP: If successful, place the Will-Bound Character within 12” of the Heinous Willed Character and Activate it immediately after the Heinous Willed Character’s Activation ends.
+
+Will-Bound Characters cannot be equipped with items or Charge. Also, if they ever fail a Bravery Test they are Knocked Out, as the magic that binds them crumbles. If a Will-Bound Character is ever Knocked Out, the AP that was spent on them is returned to the Heinous Willed Character.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6965-9b88-13e0-6504" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="b371-ffd2-8fc5-2da5" name="Dark Lords" hidden="false" targetId="26d6-a6c3-28f3-8b76" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9b65-084a-9c47-b11a" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="eee4-275e-a154-1d28" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d371-6c9f-154d-1b90" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="875d-0145-5a16-d69a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="11d1-46a3-3142-9f0f" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="210.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aeb6-2b4a-0999-585b" name="Hobgoblin" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6700-9858-9abb-9cd0" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efe9-d7ed-497e-ddcf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ebd0-5adf-996b-ccfa" name="Hobgoblin" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="aeb6-2b4a-0999-585b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">6</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9bdf-8ac2-e2f8-a772" name="Hack &apos;n&apos; Slash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows one more D6 to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b6b7-734b-5a0c-7afc" name="Gut Stab" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="799a-c0c1-c59a-cf21" name="Diminutive" hidden="false" targetId="7b46-b809-5263-c8f7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fbf7-d988-89d9-899d" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="431d-d90e-36cf-1d48" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ac12-ea50-9371-c5a3" name="Underling" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6700-9858-9abb-9cd0" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efe9-d7ed-497e-ddcf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7144-af17-9bb4-bd90" name="Underling" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">5</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca5c-bb83-c1ef-e35f" name="Blazing Demise" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Targets every Character within 2”. The Character is Knocked Out after the Attack has been executed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2ec7-22fc-da4d-14c5" name="Bite" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="aa34-2569-6e3f-a8b1" name="Diminutive" hidden="false" targetId="7b46-b809-5263-c8f7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b72d-d50a-e5ad-9275" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+        <categoryLink id="ecfd-a078-6ec7-3315" name="Will-bound" hidden="false" targetId="9901-4fe5-0a58-f605" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -171,6 +435,11 @@
             <modifier type="set" field="eb2d-858e-a66e-4820" value="0.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6f8-944a-f7fb-ee44" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -195,6 +464,11 @@
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="14f0-773b-3bda-2fd6" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd02-2784-4863-9e0b" type="max"/>
@@ -211,6 +485,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="26bd-2a5a-f15e-da90" name="Sacrificial Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d6-0f36-007a-8657" type="max"/>
           </constraints>
@@ -229,6 +510,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="e3ea-715c-10ef-0547" name="Strongbow" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b8-d890-6494-da64" type="max"/>
           </constraints>
@@ -246,6 +534,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="1217-464b-efe5-ec89" name="Faeblade" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ac7-9825-13b7-b313" type="max"/>
           </constraints>
@@ -273,29 +568,180 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="b72b-60ff-e2d7-0549" name="Healing Gem" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5711-6133-735e-ed58" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="de67-0847-feed-d759" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Healing Gem"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="92f0-7e8e-5d08-bc2e" name="Black Potion" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0c1-2156-9d70-d801" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="440a-444b-5e11-a9aa" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Black Potion"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="26e7-8d37-4c20-975c" name="Fellblade" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b176-a0c3-67a4-1bc1" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7c0-3a34-dbcc-818a" type="max"/>
+          </constraints>
           <profiles>
-            <profile id="928f-c4ba-b343-e83c" name="Healing Gem" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
+            <profile id="6ac7-6db2-ffd0-3c59" name="Fellblade" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
               <characteristics>
-                <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">Regains D6 HP when used by the Character. The Character can give the Healing Gem to a friendly model, but they must be in base contact. May be used on Beasts, Monsters and Titans.</characteristic>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">The Character gets +1 Power for all Attacks for each enemy Character it Knocks Out.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f3cf-f58a-2f50-772e" name="Book of Dark Magics" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b176-a0c3-67a4-1bc1" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ea-5e60-c6ae-bc8b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9dc3-5d35-4454-5c76" name="Book of Dark Magics" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">The Character may cast Spells from the Lore of Dark Magic.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="50.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="43e1-0cd9-ed72-fdf3" name="Two Handed Weapon" hidden="false" collective="false" import="true" targetId="9bae-2a26-258a-a25d" type="selectionEntry"/>
-        <entryLink id="588d-9f63-f964-56fc" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry"/>
+        <entryLink id="588d-9f63-f964-56fc" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b176-a0c3-67a4-1bc1" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="e467-4804-4f25-338f" name="Light Armour" hidden="false" collective="false" import="true" targetId="2d63-9484-6cd7-3faf" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b176-a0c3-67a4-1bc1" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="94eb-3c3f-a5ca-47db" name="Dual Weapons" hidden="false" collective="false" import="true" targetId="2254-c109-98b3-fe0e" type="selectionEntry"/>
+        <entryLink id="c655-c07f-4abc-2269" name="Spear" hidden="false" collective="false" import="true" targetId="536b-2208-d864-4f5a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7502-7ffd-736c-4f69" name="Torch" hidden="false" collective="false" import="true" targetId="ef98-7c8a-2485-3437" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4b2-3b2a-9124-8e58" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="70ae-4500-ea44-fe95" name="Mount" hidden="false" collective="false" import="true" targetId="508b-8526-fb8f-5b88" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aeb6-2b4a-0999-585b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="21f6-93d6-7c49-8c98" name="Faction" hidden="false" collective="false" import="true" defaultSelectionEntryId="efe9-d7ed-497e-ddcf">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ca5-b9ad-c8c4-ca80" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23fd-73a0-0312-86e8" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="efe9-d7ed-497e-ddcf" name="*Mixed*" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="53cc-0e71-5a3c-9781" name="Wild Elves" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6700-9858-9abb-9cd0" name="Dark Lords" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="27a6-364d-d04b-c558" name="Wizards" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="490c-e6bc-3eed-4ef6" name=" Sacrifice (2 AP)" hidden="false">
+    <rule id="490c-e6bc-3eed-4ef6" name="Sacrifice (2 AP)" hidden="false">
       <description>Once per Activation a Character with this Ability may choose any Character in base contact on the same sized base or smaller. If they are lower than 25% of their total HP, roll a D6. If successful, the enemy Character is Knocked Out, and the player receives one Arcanite Token.</description>
     </rule>
     <rule id="1421-e006-7257-7dcf" name="Summoner" hidden="false">
@@ -307,4 +753,7 @@ o Medium: If successful, place the Summoned Character within 12” of the Summon
 Summoned Characters may carry Items or Equipment, but may not use them unless the rules specifically state so. Also, if they ever fail a Bravery Test they are Knocked Out, as the magic that binds them crumbles. If a Summoned model is ever Knocked Out, they can be re-Summoned in the following Round.</description>
     </rule>
   </sharedRules>
+  <catalogueLinks>
+    <catalogueLink id="8911-3259-ed6b-796a" name="Monsters" targetId="7960-e53e-9859-392f" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

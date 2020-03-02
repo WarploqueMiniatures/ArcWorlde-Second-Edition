@@ -209,6 +209,21 @@
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2254-c109-98b3-fe0e" name="Dual Weapons" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c60-0263-2602-74ca" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f365-27fb-b8ae-d6e8" name="Dual Weapons" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">If equipped, this Character may re-roll every 1 when making an Attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="10.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="46d4-e5df-753a-dbbe" name="Agile" hidden="false">
@@ -247,6 +262,12 @@ When the victim is next Activated, they must immediately attempt a Medium Feat t
 If this attempt is failed, the victim takes 3 Hits and their Activation ends. The next time they are Activated they can try again, but this time the Feat difficulty is increased by one level. If a Gobbled Character is Knocked Out or fails a Legendary Feat to escape, they are digested and the Gobbler regains 1D6 HP. Delicious!
 
 Multiple Characters can be Gobbled at the same time by the beast, as long as the creature is hungry enough…</description>
+    </rule>
+    <rule id="7b46-b809-5263-c8f7" name="Diminutive" hidden="false">
+      <description>When Characters with this Ability are Knocked Out, Characters with the Intimidating Ability do not take Bravery Tests. They are too puny to care about! Also, they may be Hurled.</description>
+    </rule>
+    <rule id="aeee-4d0e-d71a-56db" name="Intimidating" hidden="false">
+      <description>Any Characters with the Diminutive Ability that are within 6” of an Intimidating Character may re-roll one Failure when Attacking per Round.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
