@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="cf00-b81f-9547-8b7c" name="Kingdom of the Dead" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="69f6-0219-7b8f-a1e4" name="Zombie Raiders" hidden="false"/>
+    <categoryEntry id="15e3-40e3-5a95-c93b" name="Ancient Dead" hidden="false"/>
+    <categoryEntry id="a197-4e2e-bbac-1918" name="Raised" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="dae3-7477-d7f0-3e91" name="Harbinger" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46d5-0ce2-307d-1e48" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cda6-4ac5-ed22-6995" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="643a-332e-b1a7-3ba1" name="Harbinger" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="dae3-7477-d7f0-3e91" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">9</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3e0e-65f6-f3c8-980a" name="Swashbuckle" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If a Critical Hit is rolled, the target loses 1AP in its next Activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="255f-eb8d-71e4-d660" name="Vicious Slash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits ignore Armour.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="72d6-689c-bbc6-7ad5" name="Raise the Dead" hidden="false" targetId="aaff-0203-029b-197d" type="rule"/>
+        <infoLink id="fb3d-dd25-cf9e-94b5" name="Soul Eater" hidden="false" targetId="66b0-ea71-a158-5f6c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="349a-e48e-bacf-2224" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="c999-2be2-c284-eb35" name="Zombie Raiders" hidden="false" targetId="69f6-0219-7b8f-a1e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="43b1-2e56-5a14-6e78" name="Armoury" hidden="false" collective="false" import="true" targetId="c480-4b01-2819-f695" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e8f-4be8-01bf-3947" name="Faction" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1f9-97c0-4b14-a643" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3e9-2976-c341-9fab" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1ba1-1851-1e7f-4aa0" name="New CategoryLink" hidden="false" targetId="b937-4657-18eb-482f" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="758a-f910-0291-288c" name="Faction" hidden="false" collective="false" import="true" targetId="81f6-a9c4-c246-713f" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a395-193b-3180-4979" name="Zombie Bandit" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46d5-0ce2-307d-1e48" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cda6-4ac5-ed22-6995" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f4b7-5912-21d4-7c35" name="Zombie Bandit" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="a395-193b-3180-4979" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">6</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">7</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="780f-0b32-b2c9-82c1" name="Gut &apos;Em" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hit ignores 1 Armour</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0738-93af-3afa-52a4" name="Slash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="01dd-9dcf-5643-95ce" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="69fe-d81f-7a56-9b98" name="Zombie Raiders" hidden="false" targetId="69f6-0219-7b8f-a1e4" primary="false"/>
+        <categoryLink id="47db-9aec-f251-f15f" name="Raised" hidden="false" targetId="a197-4e2e-bbac-1918" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="df54-0a2b-d03e-61c2" name="Armoury" hidden="false" collective="false" import="true" targetId="c480-4b01-2819-f695" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="555c-f0bf-b4ff-5807" name="Carrion Rat" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46d5-0ce2-307d-1e48" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cda6-4ac5-ed22-6995" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="69ad-9d83-0a78-1cfb" name="Carrion Rat" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">6</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">5</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7553-b00c-8ebe-2dd5" name="Death Leap" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Ranged Attack (2”). After this Attack, move this Character in base contact with the target. If there are more Failures than Successes when rolling to Hit, the Carrion Rat is Knocked Out afterwards.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="50c7-7df2-d27a-620a" name="Bite" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="460e-187c-f78d-bfe4" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+        <categoryLink id="9074-f44a-5008-4e14" name="Raised" hidden="false" targetId="a197-4e2e-bbac-1918" primary="false"/>
+        <categoryLink id="c013-bc89-7b49-8ef3" name="Flammable" hidden="false" targetId="6920-91e1-7014-aed1" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e5a-c046-3a4d-5cf1" name="Grave King" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46d5-0ce2-307d-1e48" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33d3-4d0a-50b2-6a8d" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a4a3-9fca-5953-2de4" name="Grave King" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">9</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c44c-b908-c6c1-5130" name="Chill Aura" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Targets every Character without the Bones Ability within 2”. Critical Hits ignore Armour.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8e33-5a32-3ceb-3215" name="Regal Strike" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits ignore Armour</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="81af-6538-9bf4-ec8c" name="Afterlife" hidden="false" targetId="3109-2960-777e-dfd9" type="rule"/>
+        <infoLink id="9ee2-c48f-4ddc-6f52" name="Fulcrum" hidden="false" targetId="ac85-c655-330d-b623" type="rule"/>
+        <infoLink id="3436-eef2-6fbc-592f" name="Bones" hidden="false" targetId="8d5b-d8f7-b583-5bf6" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0028-3b46-6a32-7d0c" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="ce2e-ba37-d20a-7ab5" name="Ancient Dead" hidden="false" targetId="15e3-40e3-5a95-c93b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6698-610e-398c-59c6" name="Armoury" hidden="false" collective="false" import="true" targetId="c480-4b01-2819-f695" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bae0-f79a-13fc-afb0" name="Skelt" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46d5-0ce2-307d-1e48" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33d3-4d0a-50b2-6a8d" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="48e9-11b2-b075-e2f6" name="Skelt" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b366-02fc-4e07-5658" name="Corroded Blade" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hit ignores 1 Armour</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bb1d-e8f6-2ede-a05f" name="Hack" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4c35-b6df-2eef-1e39" name="Afterlife" hidden="false" targetId="3109-2960-777e-dfd9" type="rule"/>
+        <infoLink id="afb3-b6ea-6670-7088" name="Bones" hidden="false" targetId="8d5b-d8f7-b583-5bf6" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9beb-ce4a-d610-12a6" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="a2af-62ba-dc7a-82c6" name="Ancient Dead" hidden="false" targetId="15e3-40e3-5a95-c93b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7c7b-3b9f-8068-cefa" name="Armoury" hidden="false" collective="false" import="true" targetId="c480-4b01-2819-f695" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="22c5-2cac-201d-8094" name="Barrow Lurker" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46d5-0ce2-307d-1e48" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33d3-4d0a-50b2-6a8d" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c4fc-bcd0-ffd7-0d39" name="Barrow Lurker" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">6</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="05d7-328d-837c-7a96" name="Ambush" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Adds +2” to any movement that immediately precedes this Attack. If there are more Failures than Successes, the Barrow Lurker is Knocked Out afterwards.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3ea-0daa-9fe7-76b9" name="Bite" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2c21-9fd9-ad36-ff06" name="Bones" hidden="false" targetId="8d5b-d8f7-b583-5bf6" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="acc5-47eb-7c3b-8bff" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+        <categoryLink id="40ce-bcd5-8d76-842b" name="Ancient Dead" hidden="false" targetId="15e3-40e3-5a95-c93b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="20.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="c480-4b01-2819-f695" name="Armoury" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="414b-4830-e464-fdbd" name="Stolen arcloque pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f6-0219-7b8f-a1e4" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a015-7d94-4d84-9cdf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9761-3590-8965-2f55" name="Stolen arcloque pistol" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">12” range. This Attack may only be made once per activation. If there are more Failures than Successes, the wielder receives the same number of Successes to themselves as if they were Successes from the same weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="23c4-5b38-fcdb-4b68" name="Soul Jar" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f6-0219-7b8f-a1e4" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5f7-b16c-5eec-a25c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="402b-e2d1-1168-471c" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Soul Jar"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3d67-c4a5-e5ae-2aa6" name="Canopic Jar" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="15e3-40e3-5a95-c93b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c851-8be0-adca-fe06" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3a02-7b37-bb59-77f2" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Canopic Jar"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bd62-aee4-01c6-f36f" name="Ethereal Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="15e3-40e3-5a95-c93b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b9-2e8e-3256-6b37" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ef1c-0828-56e2-f5c3" name="Ethereal Blade" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11"/>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816"/>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">This blade shimmers in and out of reality, and as such ignores all Armour.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="07ed-7412-9622-2667" name="Shield" hidden="false" collective="false" import="true" targetId="ca13-7eba-fb7b-85dc" type="selectionEntry"/>
+        <entryLink id="5295-ee19-a39a-4f6b" name="Two Handed Weapon" hidden="false" collective="false" import="true" targetId="9bae-2a26-258a-a25d" type="selectionEntry"/>
+        <entryLink id="a498-817d-a57d-8a85" name="Spear" hidden="false" collective="false" import="true" targetId="536b-2208-d864-4f5a" type="selectionEntry"/>
+        <entryLink id="763f-dc99-8928-f51b" name="Torch" hidden="false" collective="false" import="true" targetId="ef98-7c8a-2485-3437" type="selectionEntry"/>
+        <entryLink id="c1f5-ef36-3f96-6c81" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry"/>
+        <entryLink id="c012-bfa5-0cc9-a98e" name="Light Armour" hidden="false" collective="false" import="true" targetId="2d63-9484-6cd7-3faf" type="selectionEntry"/>
+        <entryLink id="b197-5647-8103-4f17" name="Mount" hidden="false" collective="false" import="true" targetId="508b-8526-fb8f-5b88" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69f6-0219-7b8f-a1e4" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="81f6-a9c4-c246-713f" name="Faction" hidden="false" collective="false" import="true" defaultSelectionEntryId="46d5-0ce2-307d-1e48">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0004-2988-6d03-ee79" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="924e-02c4-a26f-499f" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="46d5-0ce2-307d-1e48" name="*Mixed*" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="cda6-4ac5-ed22-6995" name="Zombie Raiders" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="33d3-4d0a-50b2-6a8d" name="Ancient Dead" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="01da-b02c-7d07-bd8e" name="Vampires" hidden="false" collective="false" import="true" type="upgrade"/>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="aaff-0203-029b-197d" name="Raise the Dead" hidden="false">
+      <description>A Character with this Ability may attempt to resurrect fallen friendly Characters with the Raised Ability.
+
+When a Character with the Raised Ability is Knocked Out, make a note of where they fell. Either place the model on its side, or use a token. To resurrect a fallen Character, the Character with Raise the Dead must roll a Feat and be within 6” of this spot 
+
+For Units or Beasts, a Medium Feat is required. For Elites or Irregulars, a Hard Feat is required.
+
+For Heavies, or friendly Characters without the Raised Ability, a Legendary Feat is required.
+
+Characters who are successfully resurrected are placed back on the game board in the same place that they fell, and can be Activated as normal. However, they are at 50% of their starting HP, rounding up to the nearest whole number.</description>
+    </rule>
+    <rule id="66b0-ea71-a158-5f6c" name="Soul Eater" hidden="false">
+      <description>When a Character with the Raise the Dead Ability successfully resurrects another Character, if they also have the Soul Eater Ability, they may choose to sacrifice them instead to increase their own HP. The resurrected Character is permanently removed from the game board, and the Soul Eater regains as many HP as the total HP stat of the victim. The Soul Eater may not increase their HP above their original value.</description>
+    </rule>
+    <rule id="ac85-c655-330d-b623" name="Fulcrum" hidden="false">
+      <description>Whenever a Character with the Bones Ability is Knocked Out within 12&quot; of one with the Fulcrum Ability, roll a D6. If Successful, place the Character within 3&quot; of the Fulcrum Character at the beginning of the Fulcrum’s next Activation. Any Characters placed in this way start their Activation with only 1 HP.</description>
+    </rule>
+    <rule id="8d5b-d8f7-b583-5bf6" name="Bones" hidden="false">
+      <description>The Character may spend 1AP to pull themselves together, and regain D3 HP. In addition, Characters trying to shoot at them suffer -1 to their Aiming Rolls. The arrows go right through!</description>
+    </rule>
+    <rule id="3109-2960-777e-dfd9" name="Afterlife" hidden="false">
+      <description>The Ancient Dead believe that they are in their Afterlife, and as such have no fear of any repercussions. Characters with this Ability automatically pass all Bravery Tests.</description>
+    </rule>
+  </sharedRules>
+</catalogue>
