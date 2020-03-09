@@ -37,11 +37,6 @@
             <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">If this character doesn’t lose any HP during a Turn, it regains D6 Health.</characteristic>
           </characteristics>
         </profile>
-        <profile id="119d-bc02-3c65-ed4c" name="Ambush" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">At the start of the game, secretly select one piece of scenery on the board that isn’t in your opponent’s deployment zone. This character is hidden here, and cannot be targeted by any character on the board. At any point during the game, you may choose to reveal the character and it is Activated immediately after the Active character’s activation has ended.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="11eb-4f7c-720a-4c58" name="Split Activation" hidden="false" targetId="77cc-a374-fb7f-a17c" type="rule"/>
@@ -49,6 +44,7 @@
         <infoLink id="c282-653f-256c-42e0" name="Dwindling Strength" hidden="false" targetId="b59d-2c8d-a01e-1556" type="rule"/>
         <infoLink id="6ec2-1d49-a044-b957" name="Death Throes" hidden="false" targetId="b9df-d7df-b729-5fd2" type="rule"/>
         <infoLink id="d5e2-1d33-d26b-db03" name="Gobble" hidden="false" targetId="fd73-7bc0-8099-ac56" type="rule"/>
+        <infoLink id="6cfb-1ba2-cc3b-4295" name="Ambush" hidden="false" targetId="0814-4f4d-7979-2d10" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3c28-bfb5-b28d-6e59" name="New CategoryLink" hidden="false" targetId="1b2c-7087-cbbd-044e" primary="true"/>
@@ -57,5 +53,63 @@
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="240.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6fe2-a2f1-a53a-c92a" name="Forest Dragon" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="09ad-6c62-4a9e-be4e" name="Forest Dragon" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">14</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">8</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">60</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8869-ab62-839b-2508" name="Talons" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits make the target Character Prone if on a smaller base size, after the Attack has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="53c1-a182-ef82-ac57" name="Tail Swipe" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">All Characters within 4” are targets of this attack. If a Critical Hit is made, the target Character is thrown D6 inches in a direction of the Dragon player’s choosing. This Character is Prone.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e124-e162-68d3-5b70" name="Noxious Breath" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">3</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">-</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Ranged (6”). Draw a direct line from this Character to a point up to 6&quot; away. Any Character touched by this line is affected by this Attack. In addition, the targets suffer a number of Hits equal to the amount of HP that they are below their starting HP. This Attack may be used whilst this Character is in base contact with an enemy Character.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4d32-fd2f-dfb4-6920" name="Advanced Fungal Regeneration" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">??</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4b6f-4f9a-3027-eba8" name="Devour" hidden="false"/>
+      </rules>
+      <infoLinks>
+        <infoLink id="31f1-9fa3-931f-4d3e" name="Death Throes" hidden="false" targetId="b9df-d7df-b729-5fd2" type="rule"/>
+        <infoLink id="2eca-a730-0788-2b7b" name="Split Activation" hidden="false" targetId="77cc-a374-fb7f-a17c" type="rule"/>
+        <infoLink id="cf23-8fca-d867-2deb" name="Fearsome" hidden="false" targetId="ff17-aeab-09ff-9996" type="rule"/>
+        <infoLink id="360e-9f6f-923e-7bc0" name="Dwindling Strength" hidden="false" targetId="b59d-2c8d-a01e-1556" type="rule"/>
+        <infoLink id="a7cd-dfc5-8f11-118e" name="Ambush" hidden="false" targetId="0814-4f4d-7979-2d10" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e67d-f7cd-68a6-9bb1" name="New CategoryLink" hidden="false" targetId="fb65-f23e-2720-296d" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
+  <sharedProfiles>
+    <profile id="0814-4f4d-7979-2d10" name="Ambush" hidden="false" typeId="18df-b432-5529-510a" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Special Rules" typeId="ec3c-4cd4-2b0e-cbce">At the start of the game, secretly select one piece of scenery on the board that isn’t in your opponent’s deployment zone. This character is hidden here, and cannot be targeted by any character on the board. At any point during the game, you may choose to reveal the character and it is Activated immediately after the Active character’s activation has ended.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="5288-04ca-d840-7b90" name="Nomad Kingdoms" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="2059-3367-745f-4dd0" name="Bayourk" hidden="false"/>
+    <categoryEntry id="fdbe-4515-d666-e694" name="Gremlin" hidden="false"/>
+    <categoryEntry id="d56a-a6b7-daaf-a841" name="Beastfolk" hidden="false"/>
+  </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="e65e-e568-90b8-f28c" name="Faction" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7004-c27a-2caf-827f" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1868-8be4-cd23-ac0b" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b5ad-1519-34fa-8785" name="New CategoryLink" hidden="false" targetId="b937-4657-18eb-482f" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ef88-d491-3e85-8eff" name="Faction" hidden="false" collective="false" import="true" targetId="dfea-df2e-3c65-212c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="92a9-e6bc-1e85-7166" name="Bayourk Chieftain" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0555-5996-586e-3eba" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="e68e-5d8a-c70a-5905" name="Bayourk Chieftain" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">5</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">8</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">15</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e0af-de37-ed86-12c1" name="Brawl" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">9</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows one more D6 to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a6a6-8bf8-6df0-1914" name="Boot" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If the Target is Prone, if there are more Successes than Failures, the Character is moved 3” in a direction chosen by the Bayourk player.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4d35-a44a-90c1-d14f" name="Bludgeon" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits cause the next Attack to have +1 Power. This does not stack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a320-4183-93c1-bc2b" name="Intimidating" hidden="false" targetId="aeee-4d0e-d71a-56db" type="rule"/>
+        <infoLink id="4e92-a9a4-513a-db8e" name="Hurl" hidden="false" targetId="361e-1ab7-aa91-2717" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7c94-adb6-c8e1-be04" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="fa3a-9a14-8d70-a530" name="Bayourk" hidden="false" targetId="2059-3367-745f-4dd0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4f72-23de-eabd-c04b" name="Armoury" hidden="false" collective="false" import="true" targetId="bada-8cf3-9d0d-2e36" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7fe1-c5a5-7306-45d5" name="Bayourk Brute" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0555-5996-586e-3eba" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7db9-7410-bac2-835c" name="Bayourk Brute" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">11</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2f1a-e762-764a-b9eb" name="Wail On &apos;Em" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">7</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows one more D6 to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a2d-fde7-c6c8-d67c" name="Smack" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits cause the next Attack to have +1 Power. This does not stack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8bc3-4e9c-e4aa-d70b" name="Hurl" hidden="false" targetId="361e-1ab7-aa91-2717" type="rule"/>
+        <infoLink id="5c1b-9667-d3ca-6944" name="Intimidating" hidden="false" targetId="aeee-4d0e-d71a-56db" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1e76-9936-dae9-bd4c" name="New CategoryLink" hidden="false" targetId="546e-d4c4-56cf-957e" primary="true"/>
+        <categoryLink id="4cc1-78a4-f6a7-9eed" name="Bayourk" hidden="false" targetId="2059-3367-745f-4dd0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c263-3105-1fcc-5f51" name="Armoury" hidden="false" collective="false" import="true" targetId="bada-8cf3-9d0d-2e36" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6915-1e4a-c746-266f" name="Boglin Looter" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0555-5996-586e-3eba" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ab75-7c8a-6808-9424" name="Boglin Looter" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">5</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cbc9-ccd9-f271-76ac" name="Scrap" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows one more D6 to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9751-588d-17fc-6746" name="Shank" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5282-d7a2-1f4e-9366" name="Diminutive" hidden="false" targetId="7b46-b809-5263-c8f7" type="rule"/>
+        <infoLink id="5315-a64f-aa90-63c7" name="Sticky Fingers" hidden="false" targetId="3f82-ee69-85a7-d3d0" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7d9e-4586-96ae-f881" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="6a1d-334a-57c4-3a66" name="Bayourk" hidden="false" targetId="2059-3367-745f-4dd0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="37b1-629c-df69-aabe" name="Armoury" hidden="false" collective="false" import="true" targetId="bada-8cf3-9d0d-2e36" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="28.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e3ff-610f-7f54-9b7a" name="Gremlin Big Chief" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f02-7596-0e5e-d5d4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1c4f-4a91-d7ca-177e" name="Gremlin Big Chief" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="8">
+              <conditions>
+                <condition field="selections" scope="e3ff-610f-7f54-9b7a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a3b-0d9d-c7c7-db66" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">8</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="524b-6ef2-7aea-beb7" name="Wakka Smash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">8</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If this Attack occurs after a movement provoked by the Paranoid Ability, the target must immediately take a Bravery Test.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5c1b-9e74-9b17-4618" name="Stabby-stab" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows one more D6 to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="aae6-3fa9-bf71-efa2" name="Paranoid" hidden="false">
+          <description>If a friendly Character Knocks Out an enemy within 3” of the Big Chief, the Chief must prove to them that they are still the best! If the Big Chief is not in base contact with an enemy, they must immediately move and Leg It until they do, or fall over. This is done within the friendly Character’s Activation, and AP required for the Big Chief to move is taken from their subsequent Activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4bb2-07e1-2319-586f" name="Intimidating" hidden="false" targetId="aeee-4d0e-d71a-56db" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="de74-20f3-9846-5259" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="a3a7-f5c8-76a4-e62e" name="Gremlin" hidden="false" targetId="fdbe-4515-d666-e694" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2201-bf28-60e6-f632" name="Armoury" hidden="false" collective="false" import="true" targetId="bada-8cf3-9d0d-2e36" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cae5-30c2-b492-3572" name="Gremlin Stalka" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f02-7596-0e5e-d5d4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a410-7bb8-8997-80ae" name="Gremlin Stalka" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="8">
+              <conditions>
+                <condition field="selections" scope="cae5-30c2-b492-3572" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a3b-0d9d-c7c7-db66" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">6</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf6b-582f-1216-4da0" name="Frantic Stabbing" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows one more D6 to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0b00-2843-45ef-e36f" name="Bite" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3e85-5465-f242-959e" name="Scarper" hidden="false">
+          <description>A Character with this Ability may re-roll all failed rolls to leave Melee Combat.</description>
+        </rule>
+        <rule id="a690-b1c5-038c-ecc3" name="Rabble" hidden="false">
+          <description>If a Character with this Ability ever fails a Bravery Test, when they flee they must move towards the nearest Character who also has the Rabble Ability. If they manage to make base contact, they automatically Rally.However, both Characters must use their free movement and Leg It/Charge towards the location of whatever caused the Bravery Test in their next Activation, even if it wasn’t a Character! If it was a Character, they must endeavour to engage in Melee Combat if possible.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ce89-a77a-e6b8-1073" name="Diminutive" hidden="false" targetId="7b46-b809-5263-c8f7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="789e-6223-bbed-d169" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="e077-0cc1-c022-422f" name="Gremlin" hidden="false" targetId="fdbe-4515-d666-e694" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1be3-7eab-e1fe-825c" name="Armoury" hidden="false" collective="false" import="true" targetId="bada-8cf3-9d0d-2e36" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e5d-3f8f-d23b-3e39" name="Spitlizard" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f02-7596-0e5e-d5d4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="e4ed-cd59-3b1c-6472" name="Corrosive Spit" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">6</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Ranged Attack (12”). If there are more Successes than Failures, break 1 Armour.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8d93-076b-3f58-fd29" name="Bite" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f1db-9caf-26c0-6ce9" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
+        <categoryLink id="b7ac-d133-9504-871d" name="Gremlin" hidden="false" targetId="fdbe-4515-d666-e694" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c909-9465-3f19-bf3e" name="Beastfolk Packmaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efcf-5461-e9ac-d761" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4f0b-e312-28be-19d5" name="Beastfolk Packmaster" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">5</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">8</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">14</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2fbc-c5df-00aa-9691" name="Bestial Rage" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">9</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows one more Hit to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="52c4-02db-7886-e414" name="Mighty Kick" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">If the Target is Prone, if there are more Successes than Failures, the Character is moved 3” in a direction chosen by the Beastfolk player.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5c79-1571-9da0-9a0a" name="Gore" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits break 1 Armour.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="aee5-e0a1-f3a9-066a" name="Intimidating" hidden="false" targetId="aeee-4d0e-d71a-56db" type="rule"/>
+        <infoLink id="7e12-f644-fc4a-e932" name="Sick &apos;Em" hidden="false" targetId="ca79-e101-9fe7-372b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b526-f528-657e-4ce8" name="New CategoryLink" hidden="false" targetId="2b3f-977c-bc39-38cc" primary="true"/>
+        <categoryLink id="e3e9-9b95-9dde-f530" name="Beastfolk" hidden="false" targetId="d56a-a6b7-daaf-a841" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="84e5-f416-acdf-e8fb" name="Beastfolk Clanbeast" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efcf-5461-e9ac-d761" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="500b-e7b7-413c-2e84" name="Beastfolk Clanbeast" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">7</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f439-7ac8-8b15-68e4" name="Savage" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">7</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Each Critical Hit allows one more Hit to be rolled.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7856-779b-df69-1d0a" name="Smash" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Critical Hits break 1 Armour.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="097b-002f-b402-692b" name="Intimidating" hidden="false" targetId="aeee-4d0e-d71a-56db" type="rule"/>
+        <infoLink id="f16a-c0d9-0620-9f22" name="Sick &apos;Em" hidden="false" targetId="ca79-e101-9fe7-372b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9387-2371-791b-7838" name="New CategoryLink" hidden="false" targetId="546e-d4c4-56cf-957e" primary="true"/>
+        <categoryLink id="21d0-dc03-404c-7cab" name="Beastfolk" hidden="false" targetId="d56a-a6b7-daaf-a841" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="5dde-9ee1-2d14-cae6" name="Verman" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a9f-615e-9fde-a52a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="efcf-5461-e9ac-d761" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f915-fa81-0a95-5e0b" name="Verman" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">5</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">5</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c56-190e-b7ab-1a38" name="Rabid Attack" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">7</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Ranged Attack (2”). After this attack, move this Character in base contact with the target. If there are more Failures than Successes when</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f8fa-1ee4-1d08-1de5" name="Stab" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">3</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6e0a-0f2d-116a-6d48" name="Diminutive" hidden="false" targetId="7b46-b809-5263-c8f7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9e44-f0b2-1d0f-b463" name="New CategoryLink" hidden="false" targetId="0e4c-9cc0-7d22-b185" primary="true"/>
+        <categoryLink id="8988-139d-e3e4-1748" name="Beastfolk" hidden="false" targetId="d56a-a6b7-daaf-a841" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="bada-8cf3-9d0d-2e36" name="Armoury" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="d10e-1cb7-5e48-2535" name="Cured Meat" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2059-3367-745f-4dd0" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f17-db43-662f-02f4" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="02dd-fbe0-f6e2-ea2c" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Cured Meat"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f569-2f81-4d5a-85d8" name="Hooch" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2059-3367-745f-4dd0" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca8f-b1d5-dfe4-bf60" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0488-a255-e92d-0399" name="Hooch" hidden="false" typeId="80c6-652d-292f-630a" typeName="Items">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="6e98-943b-f589-850e">When consumed, roll a D6.
+o 1 – Gutrot! The batch was a dud, and the drinker spews up all over the floor. The Character is Prone.
+o 2-5 – Good Stuff. The drinker re-rolls all failed Hit rolls. The effects last until the end of the Activation.
+o 6 – Booze Fury. This batch must have been extra potent! The drinker rerolls all failed Hit rolls, and if not in base contact with an enemy must move and Leg It until they do, or fall over. The effects last until the end of the Activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fe13-8053-1b5c-24d8" name="Pet Droggo" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2059-3367-745f-4dd0" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64ad-acb6-fee2-0d09" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a7f1-b0d1-ebae-1661" name="Living Flamethrower (Pet Droggo)" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+              <characteristics>
+                <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">2</characteristic>
+                <characteristic name="Power" typeId="0d52-7b38-99f2-f816">5</characteristic>
+                <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">Draw a 4” line from the front base edge of the Character. All Characters within 2” of the line are targeted by the Attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="667e-249a-4da7-1a87" name="Raw Meat" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdbe-4515-d666-e694" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba41-e932-e1b6-24d3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4081-de58-d9cd-8f9f" name="Healing Item" hidden="false" targetId="4afd-779b-42aa-90c9" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Raw Meat"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2306-4ea5-3cc7-7ee0" name="Jungle Poison" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdbe-4515-d666-e694" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c02-a1c0-5e49-be36" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e33b-6412-034e-3802" name="Jungle Poison" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">If a Critical Hit is rolled when Attacking, an extra Hit is taken by the target the next time they Activate. If the target fails to defend, another Hit is taken in their next Activation, and so on.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3a3b-0d9d-c7c7-db66" name="Palanquin" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdbe-4515-d666-e694" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a49-aba9-c3e9-e5fa" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f80c-70a8-aedf-0fe5" name="Palanquin" hidden="false" typeId="65b2-0d7d-d19a-90be" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special Rules" typeId="096c-14b4-b887-7361">Grants + 8HP, Light Armour.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="bc7b-dc72-1857-76f1" name="Light Armour" hidden="false" targetId="dca9-636b-a6b0-cd56" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="50.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="692b-cb45-027d-be79" name="Shield" hidden="false" collective="false" import="true" targetId="ca13-7eba-fb7b-85dc" type="selectionEntry"/>
+        <entryLink id="8292-ef6b-ed51-0060" name="Two Handed Weapon" hidden="false" collective="false" import="true" targetId="9bae-2a26-258a-a25d" type="selectionEntry"/>
+        <entryLink id="69a9-da6c-6153-24f6" name="Dual Weapons" hidden="false" collective="false" import="true" targetId="2254-c109-98b3-fe0e" type="selectionEntry"/>
+        <entryLink id="46a3-2517-3023-4239" name="Spear" hidden="false" collective="false" import="true" targetId="536b-2208-d864-4f5a" type="selectionEntry"/>
+        <entryLink id="5c43-e0f7-5bd6-7487" name="Torch" hidden="false" collective="false" import="true" targetId="ef98-7c8a-2485-3437" type="selectionEntry"/>
+        <entryLink id="ea09-ec00-511b-8379" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry"/>
+        <entryLink id="5af5-797d-2a3c-8e9a" name="Light Armour" hidden="false" collective="false" import="true" targetId="2d63-9484-6cd7-3faf" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2059-3367-745f-4dd0" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="dfea-df2e-3c65-212c" name="Faction" hidden="false" collective="false" import="true" defaultSelectionEntryId="5a9f-615e-9fde-a52a">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d867-3b93-8393-8dd7" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f13b-0cc0-0f33-6762" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="5a9f-615e-9fde-a52a" name="*Mixed*" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0555-5996-586e-3eba" name="Bayourk" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8f02-7596-0e5e-d5d4" name="Gremlins" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="efcf-5461-e9ac-d761" name="Beastfolk" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="361e-1ab7-aa91-2717" name="Hurl" hidden="false">
+      <description>A Character with the Hurl Ability may pick up and throw Diminutive Characters that are in base combat and not in Melee with an enemy Character by rolling a Feat:
+
+To throw the Diminutive Character D6”, roll an Easy Feat. To throw the Diminutive Character 2D6”, roll a Medium Feat.
+
+If successful, the Diminutive Character is placed the distance away and may Activate as normal. If these rolls are failed, the Diminutive Character is thrown anyway, but takes 1D6 Hits and is Prone.</description>
+    </rule>
+    <rule id="3f82-ee69-85a7-d3d0" name="Sticky Fingers" hidden="false">
+      <description>A Character with this skill has an aptitude for relieving one of their possessions. When rolling to take a Prone Character’s Items, they do so without having to roll an Easy Feat. They may also attempt to take Charge on a Medium Feat.</description>
+    </rule>
+    <rule id="ca79-e101-9fe7-372b" name="Sick &apos;Em" hidden="false">
+      <description>??</description>
+    </rule>
+  </sharedRules>
+  <catalogueLinks>
+    <catalogueLink id="f50a-95d6-1f67-418d" name="Monsters" targetId="7960-e53e-9859-392f" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>

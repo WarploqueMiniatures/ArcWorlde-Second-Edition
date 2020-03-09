@@ -80,6 +80,9 @@
       <entryLinks>
         <entryLink id="758a-f910-0291-288c" name="Faction" hidden="false" collective="false" import="true" targetId="81f6-a9c4-c246-713f" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a395-193b-3180-4979" name="Zombie Bandit" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -461,10 +464,26 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="924e-02c4-a26f-499f" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="46d5-0ce2-307d-1e48" name="*Mixed*" hidden="false" collective="false" import="true" type="upgrade"/>
-        <selectionEntry id="cda6-4ac5-ed22-6995" name="Zombie Raiders" hidden="false" collective="false" import="true" type="upgrade"/>
-        <selectionEntry id="33d3-4d0a-50b2-6a8d" name="Ancient Dead" hidden="false" collective="false" import="true" type="upgrade"/>
-        <selectionEntry id="01da-b02c-7d07-bd8e" name="Vampires" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="46d5-0ce2-307d-1e48" name="*Mixed*" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cda6-4ac5-ed22-6995" name="Zombie Raiders" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="33d3-4d0a-50b2-6a8d" name="Ancient Dead" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="01da-b02c-7d07-bd8e" name="Vampires" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -493,4 +512,7 @@ Characters who are successfully resurrected are placed back on the game board in
       <description>The Ancient Dead believe that they are in their Afterlife, and as such have no fear of any repercussions. Characters with this Ability automatically pass all Bravery Tests.</description>
     </rule>
   </sharedRules>
+  <catalogueLinks>
+    <catalogueLink id="ba48-1506-02be-f58d" name="Monsters" targetId="7960-e53e-9859-392f" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
