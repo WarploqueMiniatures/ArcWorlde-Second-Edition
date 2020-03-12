@@ -317,7 +317,7 @@ Will-Bound Characters cannot be equipped with items or Charge. Also, if they eve
         <entryLink id="11d1-46a3-3142-9f0f" name="Armoury" hidden="false" collective="false" import="true" targetId="1f75-53cf-c0a4-9aae" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="210.0"/>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aeb6-2b4a-0999-585b" name="Hobgoblin" hidden="false" collective="false" import="true" type="model">
@@ -425,6 +425,9 @@ Will-Bound Characters cannot be equipped with items or Charge. Also, if they eve
         <categoryLink id="b72d-d50a-e5ad-9275" name="New CategoryLink" hidden="false" targetId="4cc9-b189-8f57-f414" primary="true"/>
         <categoryLink id="ecfd-a078-6ec7-3315" name="Will-bound" hidden="false" targetId="9901-4fe5-0a58-f605" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
