@@ -113,6 +113,17 @@
               </conditions>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="ab28-f17d-68d2-7550" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="508b-8526-fb8f-5b88" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="increment" field="4427-782c-b007-b6b2" value="4"/>
+                <modifier type="increment" field="c9e8-54b6-1af9-3ae9" value="5"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <characteristics>
             <characteristic name="AP" typeId="a90b-11bd-d941-62af">2</characteristic>
             <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
@@ -568,6 +579,35 @@
         <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="40.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="edac-727f-e4c3-6065" name="Battle Cook" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9a16-e084-dc31-8be7" name="Battle Cook" hidden="false" typeId="4833-1ab1-6628-9749" typeName="Character">
+          <characteristics>
+            <characteristic name="AP" typeId="a90b-11bd-d941-62af">4</characteristic>
+            <characteristic name="Movement" typeId="4427-782c-b007-b6b2">4</characteristic>
+            <characteristic name="Bravery" typeId="ca84-91e2-58b7-8c88">8</characteristic>
+            <characteristic name="HP" typeId="c9e8-54b6-1af9-3ae9">10</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f622-013e-ac5c-672d" name="Ladle Whack" hidden="false" typeId="e6c8-0fa7-dd29-9ef5" typeName="Attacks">
+          <characteristics>
+            <characteristic name="AP Cost" typeId="ae2d-34e2-d826-7c11">1</characteristic>
+            <characteristic name="Power" typeId="0d52-7b38-99f2-f816">4</characteristic>
+            <characteristic name="Special Rules" typeId="e04b-2324-59a5-81c0">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d1b1-8398-5dd1-9528" name="New CategoryLink" hidden="false" targetId="6a9b-421f-763d-517c" primary="true"/>
+        <categoryLink id="2428-a326-ccfe-7f41" name="Halfling" hidden="false" targetId="be7e-6c15-675a-9b53" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4b53-1481-dcc2-fd5d" name="Armoury" hidden="false" collective="false" import="true" targetId="369a-4043-f5bf-7443" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="90.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="369a-4043-f5bf-7443" name="Armoury" hidden="false" collective="false" import="true">
@@ -687,7 +727,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be7e-6c15-675a-9b53" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edac-727f-e4c3-6065" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -794,30 +834,27 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7930-8849-22ad-9c29" name="Weapon option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba37-cae1-c8eb-a593" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3c55-d04f-8c57-6774" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry"/>
+            <entryLink id="9e8f-f301-c43d-0635" name="Spear" hidden="false" collective="false" import="true" targetId="536b-2208-d864-4f5a" type="selectionEntry"/>
+            <entryLink id="b126-ac44-2562-116d" name="Two Handed Weapon" hidden="false" collective="false" import="true" targetId="9bae-2a26-258a-a25d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2119-2c49-ae0d-1b16" name="Shield" hidden="false" collective="false" import="true" targetId="ca13-7eba-fb7b-85dc" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81dd-109d-a9c7-530d" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="f35f-417a-e11f-28cd" name="Two Handed Weapon" hidden="false" collective="false" import="true" targetId="9bae-2a26-258a-a25d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d25-6518-0224-bb31" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="e5a3-ee65-2014-9ae0" name="Spear" hidden="false" collective="false" import="true" targetId="536b-2208-d864-4f5a" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e540-1a02-b3d2-e726" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="8820-93dc-6c91-3ee7" name="Torch" hidden="false" collective="false" import="true" targetId="ef98-7c8a-2485-3437" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9425-8b79-5019-bd13" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="a104-5a67-e6e9-dffd" name="Ranged Weapon" hidden="false" collective="false" import="true" targetId="708b-7c81-c130-636c" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94b1-4e50-7eb5-3ded" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="33bd-1677-cf14-3c02" name="Light Armour" hidden="false" collective="false" import="true" targetId="2d63-9484-6cd7-3faf" type="selectionEntry">

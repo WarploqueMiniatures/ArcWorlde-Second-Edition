@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7960-e53e-9859-392f" name="Monsters" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7960-e53e-9859-392f" name="Bestiary" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="cae3-7ac0-a9d5-70a0" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="2a5c-feee-33c0-9247" name="Forest Troll" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -103,6 +103,9 @@
       <categoryLinks>
         <categoryLink id="e67d-f7cd-68a6-9bb1" name="New CategoryLink" hidden="false" targetId="fb65-f23e-2720-296d" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name=" GP" typeId="d371-6c9f-154d-1b90" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>

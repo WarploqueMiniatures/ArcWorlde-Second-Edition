@@ -59,6 +59,7 @@
     <categoryEntry id="6920-91e1-7014-aed1" name="Flammable" hidden="false"/>
     <categoryEntry id="53c6-b721-3436-3371" name="Fly" hidden="false"/>
     <categoryEntry id="b937-4657-18eb-482f" name="Configuration" hidden="false"/>
+    <categoryEntry id="6a9b-421f-763d-517c" name="Mage" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7195-1652-b5d6-5e8d" name="Warband" hidden="false">
@@ -77,6 +78,7 @@
         <categoryLink id="f701-253a-f0e6-30ea" name="Monster" hidden="false" targetId="1b2c-7087-cbbd-044e" primary="false"/>
         <categoryLink id="8250-ab54-3e93-81fa" name="Titan" hidden="false" targetId="fb65-f23e-2720-296d" primary="false"/>
         <categoryLink id="279e-dba3-4891-be79" name="Beast" hidden="false" targetId="4cc9-b189-8f57-f414" primary="false"/>
+        <categoryLink id="cac2-8fa3-636a-ea22" name="Mage" hidden="false" targetId="6a9b-421f-763d-517c" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
